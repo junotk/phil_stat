@@ -1,0 +1,59 @@
+% Created 2018-04-18 Wed 16:34
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{natbib}
+\usepackage[margin=1.3in]{geometry}
+\input{/Users/jun/Dropbox/settings/my_macros.tex}
+\date{2018年 前期講義資料 (作成者:大塚 淳)}
+\title{Additional Note on Linear Regression}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.1.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+Suppose we have measured two variables $X$ and $Y$ (say height and weight). 
+We consider drawing a \emph{regression line} that characterizes their relationship.
+Since the line is expressed as $Y = b X + a$, our job is to determine \emph{coefficients} $b$ and $a$. 
+
+To achieve this goal we calculate the deviance of a line from the actual data. 
+For each data point $i$, we can measure the difference or ``error'' between actual $y_i$ and the ``prediction'' $bx_i + a$ by
+\begin{equation}
+l_i = \{ y_i - (bx_i + a) \}^2 
+\end{equation}
+The square is required because we are interested just in the distance from the line to the data point, not a direction (whether the difference is positive or negative). 
+If we have $n$ data, we can sum up (1) to obtain
+\begin{equation}
+L = \sum^n_i \{ y_i - (bx_i + a) \}^2 
+\end{equation}
+The best line (i.e., $a$ and $b$) minimizes this \emph{sum of squared errors}.
+This is a quadratic function of $a$ and $b$, so to minimize $L$ we take its partial derivative with respect to $a$ and $b$ and set them to zero:
+\begin{eqnarray}
+\frac{\partial L}{\partial b}  &=& \sum y_i - b\sum x_i - na = 0 \nonumber \\
+\frac{\partial L}{\partial b}  &=& \sum x_i y_i - b\sum x_i^2 - a \sum x_i = 0 \nonumber
+\end{eqnarray}
+By solving this system of equation yields
+\begin{eqnarray}
+ b &= \frac{\sum x_i y_i - n \bar{X} \bar{Y}}{\sum x_i^2 - n \bar{X}^2}, \nonumber \\
+ a &= \bar{Y} - b \bar{X}. \nonumber
+\end{eqnarray}
+Check by yourself that this $b$ equals the regression coefficient $\cov(X,Y) / \var(Y)$ introduced in the note. 
+This procedure is called \emph{the method of least squares}.
+% Emacs 25.1.1 (Org mode 8.2.10)
+\end{document}
