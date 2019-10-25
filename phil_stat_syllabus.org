@@ -37,7 +37,7 @@ In this class students will learn
 2. Problems of induction
    - Statistics as epistemology (internalism/externalism/pragmatism and bayesianism/frequentism/model selection)
    - Statistics as inductive logic (Hume's problem, uniformity of nature)
-3. A brief history of probability \& statistics
+3. A brief history of probability & statistics
    - Quetelet's social physics
    - Galton, Pearson and positivism
 4. The ABC of probability theory & statistics
