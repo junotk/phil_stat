@@ -1,8 +1,8 @@
 #+TITLE: 統計学の哲学 (2019冬 東京大学集中講義)
-#+OPTIONS: author:nil date:nil toc:nil num:nil
+#+OPTIONS: author:nil toc:nil num:nil
 #+LaTeX_HEADER: \usepackage[margin=1.3in]{geometry}
 #+LaTeX_HEADER: \renewcommand{\labelitemi}{--}
-
+#+DATE: 最終更新日: \today
 
 * 基本情報
 - 科目名：相関基礎科学特殊講義IV
