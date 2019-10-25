@@ -1,83 +1,51 @@
-#+TITLE: Philosophy of Statistics (2018 Spring)
+#+TITLE: 統計学の哲学 (2019冬 東京大学集中講義)
 #+OPTIONS: author:nil date:nil toc:nil num:nil
 #+LaTeX_HEADER: \usepackage[margin=1.3in]{geometry}
 #+LaTeX_HEADER: \renewcommand{\labelitemi}{--}
 
 
-* Basic information
-- Instructor: Jun Otsuka (=jotsuka@bun.kyoto-u.ac.jp=)
-- Class: Tuesday 14:45-16:15 @ 9演
-- Office hour: Tuesday 10:30-12:00 at L408, or by appointment.
-- PandA: https://panda.ecs.kyoto-u.ac.jp/portal/site/2018-101-5143-004
+* 基本情報
+- 科目名：相関基礎科学特殊講義IV
+- 講師：大塚淳 (=jotsuka@bun.kyoto-u.ac.jp=)
+- 期間：2019/12/24--27
+- 場所：駒場のどこか
 
-* Theme
-As a tool for deriving a conclusion from data, statistics plays a privileged role in today's science and can be called the "epistemology of science." This lecture introduces the contemporary statistical thinking/methods and explores epistemological as well as philosophical problems in scientific reasoning. 
+* テーマ
+「データを証拠に変える装置」としての統計学は、今日の科学において特権的な役割を担っている。しかしそれだけでなく、帰納推論への形式的アプローチとして見た場合、統計学はヒューム以来の哲学的問題に対する様々な示唆を含んでいる。本授業では、現代統計学を支える数理的枠組みを概観した後、ベイズ主義、古典検定理論、機械学習を始めとした種々の統計学的手法と、そのもとにある哲学的思想を明らかにする。とりわけ、それらの統計的手法と、現代認識論における内在主義、信頼性主義、認識論的プラグマティズムとをそれぞれ比較し結びつけることで、統計学と哲学的認識論の間の関係性を探る。
 
-* Goals
-In this class students will learn 
-1. the basics of the modern statistical thinking such as Bayesian inference and statistical testing, as well as their role in scientific reasoning.
-2. philosophical assumptions and implications of these methodologies, especially regarding empiricism and realism.
-3. the relationship between the modern statistical methods and issues in philosophical epistemology (e.g. the problem of induction, the internalist/externalist epistemology, etc.)
+* 授業計画
+*** 1日目：イントロダクション
+1. 統計学と哲学の接点：認識論／帰納論理としての統計学
+2. 現代統計学の夜明け：「思考の経済」から帰納推論へ
+3. 統計・確率の基礎知識
+
+*** 2日目：ベイズ統計
+1. ベイズ統計の考え方（ベイズの定理、尤度、事前確率）
+2. 内在主義的認識論としてのベイズ主義
+3. ベイズ主義への統計学的／哲学的批判
+
+*** 3日目：頻度主義
+1. 古典的検定理論の考え方
+2. ヒュームの「心の癖」としての統計的検定
+3. 外在主義的認識論としての頻度主義
+
+*** 4日目：機械学習
+1. ディープラーニングの原理と目的
+2. モデルと複雑性（真理と単純性のトレードオフ）
+3. ビッグデータ時代の帰納推論（プラグマティズムと多元主義）
+4. 全体のまとめ
+
+* 授業の方法
+講義とディスカッション、および毎日の課題（理解確認用）。
 
 
-* Evaluation
-- Quizzes (30%)
-- Synopsis of the term paper (10%)
-- Term paper (60%)
-
-* Notes
-- This class counts as a "seminar," but will be organized as a lecture.
-- I understand some of you have worries about mathematical knowledge/skill. In this class, basic mathematical notions are explained in each lecture so that no prior knowledge of beyond high-school mathematics or statistics is required. Forgot even that? No problem, I'll explain it from scratch. However, you should try hard to review and digest the formal aspects after each class in order to understand following philosophical discussions. That will involve doing exercises and reading complementary texts.
+* 評価方法
+- 授業での発言(20%)
+- 宿題(20%)
+- レポート課題(60%)
 
 
-
-* Plan
-
-1. Introduction
-2. Problems of induction
-   - Statistics as epistemology (internalism/externalism/pragmatism and bayesianism/frequentism/model selection)
-   - Statistics as inductive logic (Hume's problem, uniformity of nature)
-3. A brief history of probability \& statistics
-   - Quetelet's social physics
-   - Galton, Pearson and positivism
-4. The ABC of probability theory & statistics
-   - Statistics, sample space, random variables, probability distribution
-5. From descriptive statistics to inferential statistics
-   - The descriptive statistics and positivism
-   - The ontology of inferential statistics (probability model as the uniformity of nature, data/population dualism)
-   - The epistemology of inferential statistics (sampling, statistical hypothesis, inference)
-6. Bayesian statistics
-   - The ABC of Bayesianism (Bayes' theorem, likelihood, prior, base rate fallacy)
-   - Bayesian induction (induction, abduction, swamping of the priors)
-   - Hierarchical Bayes and Bayesian networks
-7. Bayes as internalist epistemology
-   - Bayesianism as inductive logic
-   - Bayesianism as internalism (coherence of briefs, the fundamental briefs and prior probabilities)
-8. Critics of Bayesianism
-   - Statistical criticisms (priors, catchall hypothesis)
-   - Philosophical criticisms (internalism, psychologism)
-   - Popper's falsificationism and its problem
-9. Statistical tests 
-   - The idea of statistical testing (null vs. alternative hypotheses, Type I/II errors, significance rate, power)
-   - Practice of statistical testing (a coin example, the importance of sample size)
-10. The frequentist philosophy 
-    - Interpretation of tests (action and decision, hume's ``mind's habit'')
-    - Reliabilism (belief forming process and the severity of a test)
-    - Critics of frequentism
-11. Estimation 
-    - Maximum likelihood 
-    - Regression (simple vs multiple regression, bias and variance)
-12. Model selection
-    - Model and complexity (curve fitting, truth vs. simplicity)
-    - Akaike's theory (AIC, Ockham's rasor)
-13. Machine Learning
-    - Deep learning (its objectives, gradient descent method, regularization)
-    - Induction in the era of big data (from truth to utility, pragmatism and pluralism)
-14. Summary
-    - Statistics and epistemology (epistemology of induction, three `ism's, statistics and philosophy)
-    - What is knowledge? (Mach, Plato, and Bacon, knowledge and understanding)
-
-* References
+* 参考図書
 *** 歴史
   - デイヴィッド・サルツブルグ『統計学を拓いた異才たち』（日経ビジネス人文庫）
   - シャロン・バーチュ・マグレイン『異端の統計学ベイズ』（草思社）
