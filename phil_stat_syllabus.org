@@ -8,6 +8,9 @@
 - 科目名：相関基礎科学特殊講義IV
 - 講師：大塚淳 (=jotsuka@bun.kyoto-u.ac.jp=)
 - 期間：2019/12/24--27
+  - 24日：3-4限
+  - 25,6日：2-4限
+  - 27日：2-5限
 - 場所：駒場16号館109
 - シラバス： =https://github.com/junotk/phil_stat/tree/19winter_UT=
 
